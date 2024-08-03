@@ -1,0 +1,89 @@
+
+.container{
+    width:90vw;
+    height:100vh;
+    background:url(./images/background.png);
+    padding-left:10%;
+    padding-top: 3%;
+    background-repeat: no-repeat;
+}
+.container-body{
+    display:flex;
+    flex-direction: column;
+    gap:200px;
+}
+.nav img{
+    width:10%;
+}
+.main{
+    color:white;
+    display:flex;
+    flex-direction: column;
+}
+.main>p{
+    margin-bottom:-10px;
+
+}
+.main>h1{
+    font-size:max(3.5vw,14px)
+}
+
+.time_row_1{
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+    gap: 5.8vw;
+    margin-bottom: -1vw;
+}
+.time_row_1 div{
+    font-size: max(2.5vw, 12px)
+}
+.time_row_2{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+.time_row_2 p{
+    font-size: max(2vw, 11px)
+
+}
+.main button{
+    width:30%;
+    font-size:2vw;
+    font-weight:300;
+    padding: 10px 0;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: tomato;
+    color: white;
+    border: none;
+    border-radius:100px;
+    outline: none;
+    gap: 1vw;
+    cursor:pointer;
+
+}
+.main button img{
+    width: 2vw;
+}
+.rocket img{
+    position:absolute;
+    bottom:30px;
+    right:3vw;
+    width: 14vw;
+    animation: rocket 4s infinite ease;
+}
+@keyframes rocket {
+    0%{
+        bottom:10px;
+        opacity: 0;
+    }
+    100%{
+        bottom:100vh;
+        opacity: 1;
+    }
+    
+}
